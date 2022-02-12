@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+        $(document).ready(function(){
+            $('.p1').hover(function(){
+                arriba = Math.random()*(400-1) +1;
+                abajo = Math.random() * (609-1) +1;
+              $(this).css('top', arriba);
+              $(this).css('left', abajo);
+            });
+        });
+	</script>
+	<meta charset="utf-8">
+	<title>¿Quieres salir conmigo?</title>
+</head>
+<body>
+	<br><br><br><br>
+	<div class="contenedor">
+		<div class="contenedor-aura">
+	<h1>¿Quieres ser mi novia?<br>
+	👉👈</h1>
+	<img src="emoji.png">
+	<br>
+	<button id="si" onclick="ClickSi()">Si</button>
+	<button class="p1">No</button>
+</div>
+</div>
+</body>
+</html>
